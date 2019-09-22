@@ -44,9 +44,9 @@ if(product_price<1500):
 
     msg = MIMEMultipart()    
     message = "price is low now !!!"+pagetitle
-    password = "Kawaldeep@89"
-    msg['From'] = "Manpreet.saluja97@gmail.com"
-    msg['To'] = "Kawaldeepsaluja89@gmail.com"
+    password = "yourpassword"
+    msg['From'] = "sendemail"
+    msg['To'] = "receviver email"
     msg['Subject'] = "Hurry!!!!! grab the offer"
     msg.attach(MIMEText(message, 'plain'))
     server = smtplib.SMTP('smtp.gmail.com: 587')    
